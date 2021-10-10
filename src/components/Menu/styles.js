@@ -11,6 +11,10 @@ export const Conteiner = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    &:active {
+      box-shadow: 0 2px #666;
+      transform: translateY(1px);
+    }
   }
 
   img {
