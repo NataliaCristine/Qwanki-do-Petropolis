@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Conteiner = styled.div`
+export const Container = styled.div`
   display: flex;
   background-color: var(--green);
   justify-content: space-around;
@@ -20,7 +20,10 @@ export const Conteiner = styled.div`
     width: 60px;
   }
 
-  button {
+  .image {
+    padding: 0;
+  }
+  a {
     background-color: var(--green);
     cursor: pointer;
     padding: 0.5rem;
