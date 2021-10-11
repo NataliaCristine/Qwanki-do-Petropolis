@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import History from "../pages/History";
 import Events from "../pages/Events";
 import IndividualEvent from "../pages/Individual Event";
 
