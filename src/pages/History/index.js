@@ -45,9 +45,9 @@ const History = () => {
             1981.
           </p>
         </section>
-        <figcaption>
+        <figure>
           <img src={graomestre} alt="Mestre" className="graoMestre" />
-        </figcaption>
+        </figure>
       </article>
       <article>
         <section className="mestre">
@@ -89,13 +89,13 @@ const History = () => {
             Cursos de Defesa Pessoal e temas relacionados a segurança publica.
           </p>
         </section>
-        <figcaption className="mestreEvandro">
+        <figure className="mestreEvandro">
           <img
             src={mestreEvandro}
             alt="Mestre Evandro"
             className="imageEvandro"
           />
-        </figcaption>
+        </figure>
       </article>
     </Container>
   );
