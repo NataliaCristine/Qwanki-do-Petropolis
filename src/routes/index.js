@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import History from "../pages/History";
+import Professor from "../pages/Instructor";
 
 const Routes = () => {
   return (
@@ -9,7 +10,9 @@ const Routes = () => {
         <History />
       </Route>
       <Route exact path="/"></Route>
-      <Route path="/professor"></Route>
+      <Route path="/professor">
+        <Professor />
+      </Route>
       <Route path="/eventos"></Route>
     </Switch>
   );
