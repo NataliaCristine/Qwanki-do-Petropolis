@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import "./App.css";
 import GlobalStyle from "./styles/global";
 import Menu from "./components/Menu";
 import Routes from "./routes";
