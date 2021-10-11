@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Events from "../pages/Events";
+import IndividualEvent from "../pages/Individual Event";
 
 const Routes = () => {
   return (
@@ -8,11 +9,11 @@ const Routes = () => {
       <Route path="/historia"></Route>
       <Route exact path="/"></Route>
       <Route path="/professor"></Route>
-      <Route path="/eventos">
+      <Route exact path="/eventos">
         <Events />
       </Route>
       <Route exact path="/eventos/:id">
-        {/* <EVENTESPECIFICO></EVENTESPECIFICO> */}
+        <IndividualEvent />
       </Route>
     </Switch>
   );

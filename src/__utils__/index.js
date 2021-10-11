@@ -27,7 +27,7 @@ export const infosEvents = [
     date: "04/04/2021",
     regiao: "Norte, Nordeste",
     pais: "Brasil",
-    id: 2,
+    id: 3,
   },
   {
     name: "seminario",
@@ -36,7 +36,7 @@ export const infosEvents = [
     date: "04/04/2021",
     regiao: "Norte, Nordeste",
     pais: "Brasil",
-    id: 2,
+    id: 4,
   },
   {
     name: "seminario",
@@ -45,7 +45,7 @@ export const infosEvents = [
     date: "04/04/2021",
     regiao: "Norte, Nordeste",
     pais: "Brasil",
-    id: 2,
+    id: 5,
   },
   {
     name: "seminario",
@@ -54,7 +54,7 @@ export const infosEvents = [
     date: "04/04/2021",
     regiao: "Norte, Nordeste",
     pais: "Brasil",
-    id: 2,
+    id: 6,
   },
   {
     name: "seminario",
@@ -63,6 +63,6 @@ export const infosEvents = [
     date: "04/04/2021",
     regiao: "Norte, Nordeste",
     pais: "Brasil",
-    id: 2,
+    id: 7,
   },
 ];

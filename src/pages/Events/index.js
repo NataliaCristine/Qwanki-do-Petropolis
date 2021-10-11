@@ -1,7 +1,8 @@
 import { infosEvents } from "../../__utils__";
 import { Ul, Container, H1 } from "./styles";
-
+import { useHistory } from "react-router";
 const Events = () => {
+  const history = useHistory();
   return (
     <Container>
       <H1>Eventos</H1>
@@ -14,7 +15,9 @@ const Events = () => {
             <div>
               <p>{event.description}</p>
             </div>
-            <button>Saiba mais!</button>
+            <button onClick={() => history.push(`eventos/${event.id}`)}>
+              Saiba mais!
+            </button>
           </li>
         ))}
       </Ul>
