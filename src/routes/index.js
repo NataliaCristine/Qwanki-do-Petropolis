@@ -1,19 +1,26 @@
 import { Route, Switch } from "react-router-dom";
 import History from "../pages/History";
-import Professor from "../pages/Instructor";
+import Instrutor from "../pages/Instructor";
+import Events from "../pages/Events";
+import IndividualEvent from "../pages/Individual Event";
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/contato"></Route>
+      <Route path="/contatos"></Route>
       <Route path="/historia">
         <History />
       </Route>
       <Route exact path="/"></Route>
-      <Route path="/professor">
-        <Professor />
+      <Route path="/instrutor">
+        <Instrutor />
       </Route>
-      <Route path="/eventos"></Route>
+      <Route exact path="/eventos">
+        <Events />
+      </Route>
+      <Route exact path="/eventos/:id">
+        <IndividualEvent />
+      </Route>
     </Switch>
   );
 };
