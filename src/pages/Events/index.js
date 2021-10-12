@@ -1,12 +1,14 @@
 import { infosEvents } from "../../__utils__";
-import { Ul, Container, H1 } from "./styles";
+import { Container, H1 } from "./styles";
 import { useHistory } from "react-router";
+import Card from "../../components/Card";
+
 const Events = () => {
   const history = useHistory();
   return (
     <Container>
       <H1>Eventos</H1>
-      <Ul>
+      <Card>
         {infosEvents.map((event) => (
           <li id={event.id}>
             <div>
@@ -20,7 +22,7 @@ const Events = () => {
             </button>
           </li>
         ))}
-      </Ul>
+      </Card>
     </Container>
   );
 };

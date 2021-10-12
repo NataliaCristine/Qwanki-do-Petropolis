@@ -2,6 +2,7 @@ import Carrousel from "../../components/Carousel";
 import { Container } from "./styles";
 import Julio from "../../asserts/Professor/Julio.jpeg";
 import Milton from "../../asserts/Professor/Milton.jpeg";
+import Card from "../../components/Card";
 
 const Professor = () => {
   const instructores = [
@@ -16,19 +17,21 @@ const Professor = () => {
         <Carrousel />
       </div>
       <h2> Comissão Técnica: </h2>
-      <ul className="conteiner-cart-principal">
+      <Card>
         {instructores.map((item, index) => (
           <li className="conteiner-cart" key={index}>
             <figure>
               <img src={item.image} alt="Instrutores" />
             </figure>
-            <strong>{item.name}</strong>
-            <p>
-              <strong>{item.graducao}</strong>
-            </p>
+            <div>
+              <strong>{item.name}</strong>
+              <p>
+                <strong>{item.graducao}</strong>
+              </p>
+            </div>
           </li>
         ))}
-      </ul>
+      </Card>
     </Container>
   );
 };

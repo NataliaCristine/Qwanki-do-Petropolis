@@ -18,8 +18,6 @@ const Menu = () => {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  console.log(size);
-
   const handleOpenModal = () => {
     setOpen(true);
   };
