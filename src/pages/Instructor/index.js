@@ -22,7 +22,9 @@ const Professor = () => {
             <figure>
               <img src={item.image} alt="Instrutores" />
             </figure>
-            <strong>{item.name}</strong>
+            <p>
+              <strong>{item.name}</strong>
+            </p>
             <p>
               <strong>{item.graducao}</strong>
             </p>

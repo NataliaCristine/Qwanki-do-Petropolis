@@ -22,6 +22,7 @@ export const Container = styled.div`
   .conteiner-cart-principal {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-flow: wrap;
     @media (min-width: 768px) {
       flex-direction: row;
@@ -29,7 +30,9 @@ export const Container = styled.div`
     }
   }
   .conteiner-cart {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-flow: wrap;
     width: 250px;
     margin: 10px;
