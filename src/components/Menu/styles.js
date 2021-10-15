@@ -11,10 +11,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    &:active {
-      box-shadow: 0 2px #666;
-      transform: translateY(1px);
-    }
   }
   > div:first-child {
     a:hover {
