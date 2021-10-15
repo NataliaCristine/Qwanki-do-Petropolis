@@ -20,8 +20,8 @@ export const Container = styled.div`
   img {
     border-radius: 100%;
     cursor: pointer;
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     @media (min-width: 900px) {
       height: 60px;
       width: 60px;

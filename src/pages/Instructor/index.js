@@ -23,12 +23,12 @@ const Professor = () => {
             <figure>
               <img src={item.image} alt="Instrutores" />
             </figure>
-            <div>
+            <p>
               <strong>{item.name}</strong>
-              <p>
-                <strong>{item.graducao}</strong>
-              </p>
-            </div>
+            </p>
+            <p>
+              <strong>{item.graducao}</strong>
+            </p>
           </li>
         ))}
       </Card>

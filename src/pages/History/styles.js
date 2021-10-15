@@ -44,7 +44,23 @@ export const Container = styled.main`
       color: var(--grey);
     }
   }
-
+  article {
+    @media (max-width: 300px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  section,
+  p {
+    @media (max-width: 300px) {
+      width: 200px;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+  }
   .mestreEvandro {
     width: 284px;
     margin: 0 auto;

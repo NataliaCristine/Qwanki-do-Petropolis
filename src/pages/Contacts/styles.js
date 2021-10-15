@@ -6,14 +6,18 @@ export const Ul = styled.ul`
   margin-top: 10%;
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 90vw;
+  margin-left: 10px;
+  @media (min-width: 900px) {
+    width: 100vw;
+  }
   li {
-    margin-top: 1%;
+    margin-top: 3%;
     border: var(--black) dotted 2px;
     padding: 10px;
     background-color: #d3d9e0;
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
     @media (min-width: 900px) {
       width: 60%;
     }

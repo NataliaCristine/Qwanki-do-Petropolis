@@ -5,7 +5,7 @@ const Contacts = () => {
     <Ul>
       <li>
         <p>
-          <strong>Localização: </strong>
+          <strong>Localização:</strong>
           Avenida Sampaio, 47-Centro -RJ
         </p>
       </li>
