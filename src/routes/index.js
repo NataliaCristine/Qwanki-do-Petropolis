@@ -5,6 +5,7 @@ import Instrutor from "../pages/Instructor";
 
 import Events from "../pages/Events";
 import IndividualEvent from "../pages/Individual Event";
+import Home from "../pages/Home";
 
 const Routes = () => {
   return (
@@ -13,7 +14,9 @@ const Routes = () => {
       <Route path="/historia">
         <History />
       </Route>
-      <Route exact path="/"></Route>
+      <Route exact path="/">
+        <Home />
+      </Route>
       <Route path="/instrutor">
         <Instrutor />
       </Route>
