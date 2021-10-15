@@ -5,11 +5,14 @@ import Instrutor from "../pages/Instructor";
 
 import Events from "../pages/Events";
 import IndividualEvent from "../pages/Individual Event";
+import Contacts from "../pages/Contacts";
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/contatos"></Route>
+      <Route path="/contatos">
+        <Contacts />
+      </Route>
       <Route path="/historia">
         <History />
       </Route>
