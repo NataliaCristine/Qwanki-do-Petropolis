@@ -5,10 +5,11 @@ export const Nav = styled.nav`
   flex-direction: column;
   align-items: center;
   background-color: black;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   height: 15vh;
+  margin-top: 20px;
   a {
     color: white;
   }
@@ -26,6 +27,7 @@ export const Nav = styled.nav`
     margin-right: 10%;
   }
   @media (min-width: 900px) {
+    height: 10vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
