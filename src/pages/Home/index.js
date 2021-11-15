@@ -1,6 +1,5 @@
 import { ContainerHome } from "./styles";
-import videos from "../../asserts/Imagens/videos.mp4";
-import { Player } from "video-react";
+import videos from "../../asserts/Video/videos.mp4";
 import { images } from "../../__utils__/imageshome";
 import Carousel from "react-elastic-carousel";
 
@@ -29,18 +28,9 @@ const Home = () => {
       </div>
       <article className="video-container">
         <h2>Você pode treinar em casa também!</h2>
-        <div className="video">
-          <Player
-            playsInline
-            poster="treinamento"
-            src={videos}
-            width="460px"
-            height="370px"
-            loop="true"
-            muted="true"
-            playing="true"
-          />
-        </div>
+        <video width="200" height="400" controls="controls" muted>
+          <source src={videos} />
+        </video>
       </article>
     </ContainerHome>
   );

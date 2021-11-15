@@ -15,8 +15,12 @@ export const ContainerHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
     justify-content: center;
     h1 {
+      @media (max-width: 300px) {
+        margin-left: 15%;
+      }
       margin-bottom: 1rem;
       color: Brown;
     }
@@ -42,8 +46,14 @@ export const ContainerHome = styled.div`
   }
 
   .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 1rem;
     width: 70%;
+    h2 {
+      margin: 2%;
+    }
     @media (min-width: 760px) {
       margin: 0 auto;
     }

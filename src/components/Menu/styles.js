@@ -11,17 +11,21 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    &:active {
-      box-shadow: 0 2px #666;
-      transform: translateY(1px);
+  }
+  > div:first-child {
+    a:hover {
+      background-color: transparent;
     }
   }
-
   img {
     border-radius: 100%;
     cursor: pointer;
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
+    @media (min-width: 900px) {
+      height: 60px;
+      width: 60px;
+    }
   }
 
   .image {
@@ -30,20 +34,21 @@ export const Container = styled.div`
 
   a {
     background-color: var(--green);
-    cursor: pointer;
-    padding: 0.5rem;
     margin-left: 15px;
     border-radius: 5%;
     border: none;
     color: var(--white);
-
+    padding: 0.5rem;
     &:hover {
       background-color: #d9d900;
     }
 
-    &:active {
-      box-shadow: 0 5px #666;
-      transform: translateY(2px);
+    @media (min-width: 900px) {
+      cursor: pointer;
+      &:active {
+        box-shadow: 0 5px #666;
+        transform: translateY(2px);
+      }
     }
   }
 
